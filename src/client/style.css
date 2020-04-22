@@ -1,0 +1,27 @@
+.thead {
+  margin: 100px;
+  border: 100px;
+  padding: 100px;
+}
+
+.row {
+  margin: 100px;
+  border: 100px;
+  padding: 100px;
+}
+
+td {
+  padding-top: 20px;
+  padding-right: 100px;
+  padding-bottom: 2px;
+  padding-left: 100px;
+}
+
+h1 {
+  position: 0 0 0 0;
+  background-color: gray;
+  /* width: 80%; */
+  /* max-width: 24em; */
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+}

@@ -2,10 +2,23 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript">
+      function foo(response) {
+        var meta = response.meta;
+        var data = response.data;
+        console.log(meta);
+        console.log(data);
+      }
+      var script = document.createElement('script');
+      script.src = 'https://api.github.com?callback=foo';
+      document.getElementsByTagName('head')[0].appendChild(script);
+    </script>
     <title>Hot Repos</title>
   </head>
   <body>
     <h1>Most Active Repositories</h1>
+    <br>
     <div class="">
       <button id="hot_repo" type="button" name="button">Hot Repos</button>
       <button id="prolific_users" type="button" name="button">Prolific Users</button>
@@ -13,7 +26,7 @@
     <br>
     <div class="">
       <table border="1">
-        <thead>
+        <thead class="thead">
           <tr>
             <th>ID</th>
             <th>Name</th>
@@ -22,7 +35,7 @@
           </tr>
         </thead>
         <tbody>
-          <tr>
+          <tr class="row">
             <td></td>
             <td></td>
             <td></td>

@@ -14,8 +14,8 @@ app.get("/", (request, response) => {
   response.send("Hi BitSight, welcome to my assignment!")
 });
 
-// APIs
-
+// API key
+// https://api.github.com/user/repos?page=2&per_page=100'
 
 app.listen(8000, () => {
   console.log("Listening on port 8000...");
